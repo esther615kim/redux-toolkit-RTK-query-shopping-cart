@@ -13,7 +13,7 @@ const Navbar = () => {
              </div>
              {/* <SearchIcon /> */}
              <TopmenuItem>
-                 <Button sx={{color:"#212121"}}>LOGIN</Button>
+                 <TopButton>LOGIN</TopButton>
                  <Button>SIGN UP</Button>
                  <Badge badgeContent={3} color="warning"><ShoppingCartIcon/></Badge>
              </TopmenuItem>
@@ -27,7 +27,6 @@ export default Navbar;
 
 
 const Wrapper = styled.div `
-background:#db1471;
 height:2rem;
 widht:100vw;
 padding:1rem 2rem;
@@ -41,8 +40,12 @@ padding:0.5rem;
 border:none;
 border-radius:5px;
 `;
-const TopmenuItem =styled.div`
-color:#fff;
+const TopmenuItem = styled.div`
 font-size:2rem;
+font-weight:bold;
+`;
+
+const TopButton =styled(Button)`
+color:#212121;
 font-weight:bold;
 `;
