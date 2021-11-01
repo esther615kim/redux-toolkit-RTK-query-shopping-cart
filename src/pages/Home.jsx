@@ -1,10 +1,11 @@
 import React from 'react';
-import TopAds from '../components/TopAds';
+import Slides from '../components/Slides';
 const Home = () => {
     return (
         <div>
-            <TopAds/>
-            <h3>홈이당</h3>
+            <Slides/>
+            <h4>왜 안먹힘
+            </h4>
         </div>
     );
 }

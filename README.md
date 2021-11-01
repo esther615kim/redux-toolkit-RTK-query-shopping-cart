@@ -5,7 +5,7 @@ It is a simply eCommerce shopping cart page created by React and REdux toolkit
 
 ### Goals ⚽
 - to use Redux toolkit for global state management in React
-- To use RTK query & Redux toolkit to handle asynchronous data 
+- To practice RTK query & Redux toolkit to handle asynchronous data 
 
 ### Stack used
 - React
