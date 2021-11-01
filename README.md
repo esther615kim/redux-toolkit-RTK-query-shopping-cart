@@ -9,7 +9,6 @@ It is a simply eCommerce shopping cart page created by React and Redux toolkit(R
 - To practice RTK query & Redux toolkit to handle asynchronous data 
 =======
 - to use RTK query & Redux toolkit to handle asynchronous data 
->>>>>>> 48eb8a6022241575ec5c7baaf47ca3c3c8dba42e
 
 ### Stack used
 - React
