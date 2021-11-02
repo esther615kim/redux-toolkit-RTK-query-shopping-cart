@@ -7,7 +7,6 @@ const Span = styled.span`
 color:#212121;
 
 `
-
 const Bannerbox =styled.div`
 color:#fff;
 padding:5px;

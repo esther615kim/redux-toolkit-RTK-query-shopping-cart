@@ -1,15 +1,16 @@
-import { configureStore } from '@reduxjs/toolkit'
-import productReducer, { productsFetch } from './features/productSlice';
+import { configureStore } from '@reduxjs/toolkit';
+// import productsSlice from './features/productsSlice';
+import productsSlice, { productsFetch } from './features/productsSlice';
+import { productsApi } from './features/productsApi';
 // import { setupListeners } from '@reduxjs/toolkit/query'
-import { productApi } from './features/productApi';
-
 export const store = configureStore({
     reducer: {
-        products: productReducer,
-        [productApi.reducerPath]: productApi.reducer,
+        products: productsSlice,
+        [productsApi.reducerPath]: productsApi.reducer,
     },
+    // configure custom middleware
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(productApi.middleware), // 여기 ...읭?
+        getDefaultMiddleware().concat(productsApi.middleware), // 여기 ...읭?
 })
 
 store.dispatch(productsFetch());// ?? 아래 꺼랑 차이는
