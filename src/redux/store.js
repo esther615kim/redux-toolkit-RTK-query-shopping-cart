@@ -9,9 +9,9 @@ export const store = configureStore({
         [productApi.reducerPath]: productApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(productApi.middleware), // 여기 뭔지 모름
+        getDefaultMiddleware().concat(productApi.middleware), // 여기 ...읭?
 })
 
-store.dispatch(productsFetch());// 왜 여기서 해줌?
+store.dispatch(productsFetch());// ?? 아래 꺼랑 차이는
 
 // setupListeners(store.dispatch) //아님 이거 씀 독스..

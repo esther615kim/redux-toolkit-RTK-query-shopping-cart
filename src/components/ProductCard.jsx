@@ -1,23 +1,29 @@
-//work flow
-//UI => container,
+
 import React from 'react';
-// import {useGetProductsQuery} from '../redux/features/productApi';
 import styled from "styled-components";
 // import { SearchIcon } from '@mui/icons-material/Search';
 
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  min-width: 180px;
-  height: 250px;
+  min-width: 340px;
+  height: 360px;
   display: flex;
   flex-direction:column;
   align-items: center;
+  text-align:center;
   justify-content: center;
   border:1px solid #eee;
+  padding:5px;
   border-radius:10px;
-  padding:10px;
+
+  @media(max-width:${({theme})=> theme.mobile}){
+    min-width: 200px;
+  height: 220px;
+       
+    } 
   h5{
+    //   2줄 후 말줄임표로
       color:#212121;
       width:80%;
       white-space: nowrap;
@@ -27,16 +33,15 @@ const Container = styled.div`
   p{
       margin-top:10px;
       color:#aaa;
-      font-size:12px;
-      
+      font-size:14px;
+      font-weight:bold;
   }
 `;
 
 const Image = styled.img`
 height:50%;
-overflow:wrap;
-
-`;
+max-width:10em;
+`
 
 function ProductCard({item}) {
     console.log(item);
