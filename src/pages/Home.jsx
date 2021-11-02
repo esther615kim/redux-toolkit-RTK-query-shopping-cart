@@ -1,9 +1,10 @@
 import React from 'react';
-import {Slides} from '../components/index';
+import {Slides,ProductList} from '../components/index';
 const Home = () => {
     return (
         <div>
             <Slides/>
+            <ProductList/>
         </div>
     );
 }
