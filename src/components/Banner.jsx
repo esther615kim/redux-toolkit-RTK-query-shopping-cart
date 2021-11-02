@@ -27,4 +27,7 @@ font-size:1rem;
 font-weight:bold;
 background: rgb(238,174,202);
 background: linear-gradient(303deg, rgba(238,174,202,1) 4%, rgba(157,187,202,1) 83%);
+@media(max-width:${({theme})=> theme.mobile}){
+    display:none;
+}
 `

@@ -1,14 +1,27 @@
 import React from 'react';
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
+import { Navbar, Banner } from './components/index';
+import { Container } from './styles/Component.styled'
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  colors: {
+    body: '#fff'
+  },
+  mobile: '520px'
+}
+
 function App() {
   return (
-    <div className="App">
-      <Banner />
-      <Navbar />
-      <Home />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div div className="App" >
+        <Container>
+          <Banner />
+          <Navbar />
+          <Home />
+        </Container>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import Slides from '../components/Slides';
+import {Slides} from '../components/index';
 const Home = () => {
     return (
         <div>
             <Slides/>
-            <h4>왜 안먹힘
-            </h4>
         </div>
     );
 }
