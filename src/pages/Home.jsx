@@ -1,12 +1,14 @@
 import React from 'react';
-import {Slides,ProductList} from '../components/index';
+import { Slides, ProductList } from '../components/index';
+import { useGetProductsQuery } from '../redux/features/productsApi';
 const Home = () => {
-    return (
-        <div>
-            <Slides/>
-            <ProductList/>
-        </div>
-    );
-}
+  const { data, error, isLoading } = useGetProductsQuery;
+  return (
+    <div>
+      <Slides />
+      <ProductList />
+    </div>
+  );
+};
 
 export default Home;

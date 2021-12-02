@@ -7,9 +7,11 @@ import { productsApi } from './features/productsApi';
 export const store = configureStore({
     reducer: {
         products: productsSlice,
-        // [productsApi.reducerPath]: productsApi.reducer,
+        [productsApi.reducerPath]: productsApi.reducer,
     },
-    // configure custom middleware
+    // configure 'customed' middleware
+    // Adding the api middleware enables caching, invalidation, polling,
+    // and other useful features of `rtk-query`.
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(productsApi.middleware),
 })
