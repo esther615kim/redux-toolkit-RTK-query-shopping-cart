@@ -1,6 +1,6 @@
 ### Project overview
 
-It is a simple eCommerce shopping cart page created using React and Redux toolkit(RTK Query)
+It is a simple eCommerce shopping cart page created using React and Redux toolkit (RTK Query)
 
 ### Goals ⚽
 - to use Redux toolkit for global state management in React
